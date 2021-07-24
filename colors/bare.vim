@@ -65,3 +65,6 @@ highlight link SignifySignChange diffChanged
 "i def link diffLine		Statement
 "i def link diffSubname		PreProc
 "i def link diffComment		Comment
+
+highlight link LspDiagnosticsVirtualTextError ErrorMsg
+highlight link LspDiagnosticsVirtualTextWarning WarningMsg
