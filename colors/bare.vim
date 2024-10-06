@@ -3,9 +3,11 @@ if exists("syntax_on")
     syntax reset
 endif
 let g:colors_name = "bare"
+set notermguicolors
 
 " highlight bad
 highlight! link Constant Normal
+highlight! link Function Normal
 highlight! link Identifier Normal
 highlight! link Statement Normal
 highlight! link Type Normal
@@ -27,13 +29,14 @@ highlight! link NonText ctermDim
 highlight! link Folded ctermBright
 highlight! link FoldColumn ctermBright
 
-highlight Visual cterm=inverse
+highlight clear Visual
 highlight clear Pmenu
-highlight Pmenu cterm=inverse
 highlight clear PmenuSel
 highlight clear MatchParen
-highlight MatchParen cterm=inverse
 highlight clear SignColumn
+highlight Visual cterm=inverse
+highlight Pmenu cterm=inverse
+highlight MatchParen cterm=none ctermbg=8
 
 highlight WarningMsg ctermbg=3 ctermfg=0
 
